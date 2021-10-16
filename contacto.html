@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto</title>
+        <!-- Para agregar el archivo CSS -->
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@300&family=Bebas+Neue&family=Montserrat+Alternates:wght@200&family=Oswald:wght@300&family=Overpass:wght@200&display=swap"
+                rel="stylesheet">
+</head>
+
+<body>
+        <header id="ARRIBA">
+                <!-- Logo -->
+                <nav class="header__panelPrincipal">
+                        <!-- Recordar Linkear cada uno de estos menus a su pag -->
+                        <a href="index.html">Inicio</a>
+                        <a href="materiales.html">Materiales</a>
+                        <a href="rendimiento.html">Rendimiento</a>
+                        <a href="#">Buscar</a>
+                </nav>
+        </header>
+
+        <h1 class="body__h1-tituloPrincipal">FORMULARIO DE CONTACTO</h1>
+
+
+
+        <form action="grid__form" id="">
+                <div class="form__contacto">
+                        <div>
+                                <label for="nombre">Nombre</label>
+                                <input type="text" name="nombre" placeholder="Ingresar Nombre" required>
+                        </div>
+                        <div>
+                                <label for="apellido">Apellido</label>
+                                <input type="text" name="apellido" placeholder="Ingresar Apellido" required>
+                        </div>
+                        <div>
+                                <label for="Age">Edad</label>
+                                <input type="age" name="Age" placeholder="Ingresar Edad" required>
+                        </div>
+                        <div>
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="Ingresa tu Email" required>
+                        </div>
+                        <div>
+                                <label for="Pass">Password</label>
+                                <input type="password" placeholder="Contraseña" required>
+                        </div>
+                        <div>
+                                <p>Te gustan los gatos?</p>
+                                <select name="Gatos" id="" required>
+                                        <option value="">Si</option>
+                                        <option value="">No</option>
+                                </select>
+                        </div>
+                </div>
+        </form>
+
+        <div class="opTrabajo">
+                <label for="grupo">
+                        <h3>GRUPO DE TRABAJO</h3>
+                </label>
+                <p>Administracion</p>
+                <input type="radio" name="grupo" value="Administracion" checked="checked">
+                <p>Coordinacion</p>
+                <input type="radio" name="grupo" value="Coordinacion" checked="checked">
+                <p>Auditorias</p>
+                <input type="radio" name="grupo" value="Auditorias" checked="checked">
+        </div>
+
+        <div id="COMENTARIOS">
+                <label for="consulta">
+                        <h3>MOTIVO DEL CONTACTO</h3>
+                </label>
+                <input type="checkbox" name="cbox1" id=""> Seguimiento
+                <input type="checkbox" name="cbox2" id=""> Listado de Materiales
+                <input type="checkbox" name="cbox3" id=""> Estado de pedidos
+                <input type="checkbox" name="cbox4" id=""> Reporte Semanal
+
+        </div>
+
+        <div>
+                <textarea name="consulta" id="box" cols="75" rows="10" maxlength="500"></textarea>
+        </div>
+
+        <div class="botones">
+                <input type="submit" value="Envia tu consulta">
+                <input type="reset" value="Limpiar formulario">
+                <input type="button" value="No me toques, estoy al pedo">
+        </div>
+
+
+
+        <footer>
+                <nav class="foot">
+                        <ul>
+                                <li> <a href="index.html">PAG.PRINCIPAL</a> </li>
+                                <li> <a href="#ARRIBA">IR ARRIBA</a> </li>
+                                <li> <a href="#COMENTARIOS">COMENTARIOS</a> </li>
+                                <li> <a href="mailto:lucas.fernandez32zs@gmail.com">EMAIL</a> </li>
+                                <!-- Para enviar mails, utilizar mailto:email -->
+                                <li> <a href="https://wa.me/5491138025799/?text=Hola%20Lucas,%20necesito%20informacion!"
+                                                target="_blank">Telefono</a> </li>
+                                <!-- Para enviar mensajes directos utilizar, https://wa.me/numero de telefono, sin + -->
+                                <!-- Para abrir una nueva pesta#a en blanco, target="_blank" -->
+                        </ul>
+                </nav>
+        </footer>
+</body>
+
+</html>
