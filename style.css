@@ -188,7 +188,7 @@ footer {
 }
 
 /* Materiales */
-/* FLEX BOX */
+/* FLEX BOX con gradientes e imagenes */
 
 .flexbox-container {
   text-align: center;
@@ -228,4 +228,7 @@ footer {
 .flex-item img:hover {
   -webkit-transform: scale(1);
   transform: scale(1.25);
+}
+.hr__inicio--foter {
+  margin-top: 45px;
 }
