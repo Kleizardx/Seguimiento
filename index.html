@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seguimiento 2021</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- SASS / Bootstrap CSS -->
+    <link rel="stylesheet" href="css/custom.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Athiti:wght@300&family=Bebas+Neue&family=Montserrat+Alternates:wght@200&family=Oswald:wght@300&family=Overpass:wght@200&display=swap"
         rel="stylesheet">
@@ -15,9 +18,9 @@
 <body>
     <header id="ARRIBA">
         <!-- Logo -->
-        <nav class="header__panelPrincipal">
+        <nav class="header__nav-panelPrincipal">
             <!-- Recordar Linkear cada uno de estos menus a su pag -->
-            <a href="materiales.html">Materiales</a>
+            <a href="personal.html">Personal</a>
             <a href="rendimiento.html">Rendimiento</a>
             <a href="contacto.html">Contacto</a>
             <a href="#">Buscar</a>
@@ -28,16 +31,16 @@
 
     <h2 class="body__h2-subTitulo">Estado de tareas</h2>
 
-    <h3 class="body__h3-procesos">
+    <h5 class="">
         <!-- No estan linkeados, ya que deberian interactuar en la misma pagina y no se como se hace -->
         <a href="enproceso">En Proceso</a>
         <a href="pendientes">Pendientes</a>
         <a href="finalizadas">Finalizadas</a>
-    </h3>
+    </h5>
 
     <main class="main__grid">
         <div class="gridmain__tareasList">
-            <ol class="main__ol--tareasList">
+            <ol class="main__ol-tareasList">
                 <li>Revision de Vehiculos</li>
                 <li>Solicitar Materiales</li>
                 <li>GP785 - Fusion de 5 Alimentadores</li>
@@ -66,18 +69,14 @@
         </div>
     </main>
 
-    <div class="pagList">
-        <!-- Navegacion entre pag 1 / 2 / 3 / 4 / 5 / 6 / ... -->
+    <div class="container">
         <!-- Entiendo que en algun momento estos deberan ser Links... -->
-        <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
         </ul>
     </div>
 
@@ -105,7 +104,7 @@
             </ul>
         </nav>
     </footer>
-
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
