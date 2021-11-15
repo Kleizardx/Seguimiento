@@ -30,3 +30,9 @@ Git log --oneline: para conocer los códigos de los commits realizados.
 Git checkout rama: para cambiar de rama o ir a un commit específico (debemos conocer su código anteriormente) 
 git merge rama: debemos estar en MASTER para fusionar.
 git branch rama: creación de una rama (si queremos eliminar una rama ponemos git branch -D nombre-rama)
+
+
+Se agrega SEO a nuestra Pag,
+Estos cambios incluyen, cambio de nombre a cada pagina.
+Palabras claves que identifican nuestro contenido dentro de la pag.
+Identificacion sobre el lenguaje utilizado. 

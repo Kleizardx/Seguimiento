@@ -5,7 +5,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Seguimiento 2021</title>
+        <meta name="description" content="Pagina de Contacto, deja tus consultas o dudas">
+        <title>Seguimiento | Contacto</title>
         <!-- Mi CSS -->
         <link rel="stylesheet" href="css/style.css">
         <!-- SASS / Bootstrap CSS -->
@@ -30,70 +31,79 @@
                 <h1>FORMULARIO DE CONTACTO</h1>
         </div>
 
-        <div class="container d-flex align-content-center justify-content-center">
-                <!-- YouTube Video -->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/5qap5aO4i9A"
-                        title="YouTube video player" frameborder="10px"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-        </div>
-
-        <form action="" id="" class="">
-                <div class="container">
-                        <div class="form-group my-1">
-                                <label for="nombre">Nombre</label>
-                                <input type="text" class="form-control" name="nombre" placeholder="Ingresar Nombre"
-                                        required>
-                        </div>
-                        <div class="form-group my-1">
-                                <label for="apellido">Apellido</label>
-                                <input type="text" class="form-control" name="apellido" size="15"
-                                        placeholder="Ingresar Apellido" required>
-                        </div>
-                        <div class="form-group my-1">
-                                <label for="date">Edad</label>
-                                <input type="date" class="form-control" name="date" placeholder="Ingresar Edad"
-                                        required>
-                        </div>
-                        <div class="form-group my-1">
-                                <label for="email">Email</label>
-                                <input type="email" class="form-control" placeholder="Ingresa tu Email" required>
-                        </div>
-                        <div class="form-group my-1">
-                                <label for="Pass">Password</label>
-                                <input type="password" class="form-control" placeholder="Contraseña" required>
-                        </div>
+        <main class="container my-3">
+                <div class="container d-flex justify-content-center">
+                        <!-- YouTube Video -->
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5qap5aO4i9A"
+                                title="YouTube video player" frameborder="10px"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                 </div>
-        </form>
-        <br>
-        <div class="container p-3 my-1">
-                <p>Desea recibir nuestras notificaciones?</p>
-                <select class="form-select">
-                        <option>SI</option>
-                        <option>NO</option>
-                </select>
-        </div>
 
-        <div id="COMENTARIOS">
-                <label for="consulta">
-                        <h3>Motivo del Contacto</h3>
-                </label>
-                <div>
-                        <input type="checkbox" name="cbox1" id=""> Seguimiento
-                        <input type="checkbox" name="cbox2" id=""> Listado de Materiales
-                        <input type="checkbox" name="cbox3" id=""> Estado de pedidos
-                        <input type="checkbox" name="cbox4" id=""> Reporte Semanal
-                </div>
-        </div>
+                <form class="row g-3">
+                        <div class="container text-center my-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">
+                                        <h4 class="my-3">Envianos tus comentarios</h4>
+                                </label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="col-md-4">
+                                <label for="inputEmail4" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4"
+                                        placeholder="Ingresa tu email" required>
+                        </div>
+                        <div class="col-md-4">
+                                <label for="inputPassword4" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4"
+                                        placeholder="Ingresa tu Contraseña" required>
+                        </div>
+                        <div class="col-md-4">
+                                <label for="date" class="form-label">Edad</label>
+                                <input type="date" class="form-control" id="Inputdate" required>
+                        </div>
+                        <div class="col-12">
+                                <label for="inputAddress" class="form-label">Direccion</label>
+                                <input type="text" class="form-control" id="inputAddress"
+                                        placeholder="Direccion de Calle" required>
+                        </div>
+                        <div class="col-12">
+                                <label for="inputAddress2" class="form-label">Entre Calles</label>
+                                <input type="text" class="form-control" id="inputAddress2"
+                                        placeholder="Despartamento, Entre calles, Numero" required>
+                        </div>
+                        <div class="col-md-6">
+                                <label for="inputCity" class="form-label">Ciudad</label>
+                                <input type="text" class="form-control" id="inputCity" placeholder="Ingresar Cuidad" required>
+                        </div>
+                        <div class="col-md-4">
+                                <label for="inputState" class="form-label">Provincia</label>
+                                <select id="inputState" class="form-select" required>
+                                        <option selected>N/A</option>
+                                        <option>Buenos Aires</option>
+                                </select>
+                        </div>
+                        <div class="col-md-2">
+                                <label for="inputZip" class="form-label">Direccion Postal</label>
+                                <input type="text" class="form-control" id="inputZip">
+                        </div>
+                        <div class="col-12">
+                                <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                                Validar datos
+                                        </label>
+                                </div>
+                        </div>
 
-        <div>
-                <textarea name="consulta" id="box" cols="75" rows="10" maxlength="500"></textarea>
-        </div>
+                        <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-success">Enviar Datos</button>
+                                <button type="reset" class="btn btn-warning">Limpiar Formulario</button>
+                        </div>
+                </form>
 
-        <div class="btn-group-horizontall botones">
-                <input type="submit" class="btn btn-outline-dark" value="Envia tu consulta">
-                <input type="reset" class="btn btn-outline-dark" value="Limpiar formulario">
-        </div>
+        </main>
+
+        <hr>
 
         <footer>
                 <nav class="foot">

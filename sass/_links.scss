@@ -1,0 +1,22 @@
+// Se cambia la interaccion de Links.
+
+a {
+    font-family: "Bebas Neue", sans-serif;
+    margin: 10px;
+    width: auto;
+    display: inline-block;
+    padding: 10px 5px 10px 5px;
+    margin: 5px 35px 5px 35px;
+  }
+  a:link {
+    color: rgba(0, 204, 136, 0.842);
+    text-decoration: none;
+    transition: text-shadow 0.5s ease;
+  }
+  a:visited {
+    color: #434948;
+  }
+  a:hover {
+    text-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.3);
+    /* Derecha, Hacia Abajo, Difuminacion, color */
+  }
