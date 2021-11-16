@@ -404,29 +404,25 @@ footer {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto;
   font-family: "Bebas Neue", sans-serif;
 }
 
-.partFooter {
-  width: 25%;
-  text-align: center;
-}
-
 .partFooter h4 {
   color: #1d273b;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 400;
-  margin-bottom: 30px;
 }
 
-.partFooter a {
+a {
   text-decoration: none;
   font-weight: 300;
-  margin-bottom: 10px;
 }
 
-.partFooter a:hover {
+a:hover {
   color: #0072b4;
 }
 
@@ -556,7 +552,7 @@ footer {
   }
   /* Footer */
   .partFooter {
-    width: 95%;
+    width: 70%;
     margin-bottom: 40px;
   }
 }
