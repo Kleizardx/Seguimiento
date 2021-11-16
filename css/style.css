@@ -164,12 +164,20 @@ nav {
           box-shadow: 0 8px 32px rgba(131, 131, 131, 0.205);
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
+  transition: -webkit-transform 0.3s ease;
+}
+
+.contenido-header a:hover {
+  transition: -webkit-transform 0.3s ease-in-out;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .contenido-header > img {
   width: 550px;
   -webkit-animation: ease-in animat 1s;
           animation: ease-in animat 1s;
+  padding-top: 2rem;
 }
 
 @-webkit-keyframes animat {
@@ -570,7 +578,7 @@ footer {
 }
 
 /* personal.html */
-/* FLEX BOX con gradientes e imagenes */
+/* FLEX BOX con gradientes, imagenes, anidado */
 .flexbox-container {
   text-align: center;
   display: -webkit-box;
@@ -601,25 +609,21 @@ footer {
   width: 400;
 }
 
-.flexbox-container > .flex-item > h6 {
+.flexbox-container > .flex-item > h4 {
   color: white;
+  text-transform: uppercase;
   padding: 10px;
   margin-bottom: 5px;
-  background-color: #03c087;
+  background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
-.flex-item > p:hover {
-  color: white;
-  font-weight: bold;
-}
-
 .flex-item:hover {
   -webkit-box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.3);
-  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.3);
-  -webkit-transition: -webkit-box-shadow 0.3s ease;
+          box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.3);
   transition: -webkit-box-shadow 0.3s ease;
+  -webkit-transition: -webkit-box-shadow 0.3s ease;
   transition: box-shadow 0.3s ease;
   transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
 }
@@ -633,6 +637,6 @@ footer {
 
 .flex-item img:hover {
   -webkit-transform: scale(1);
-  transform: scale(1.25);
+  transform: scale(1.35);
 }
 /*# sourceMappingURL=style.css.map */
