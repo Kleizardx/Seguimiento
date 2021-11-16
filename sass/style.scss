@@ -49,13 +49,6 @@ h1 {
   font-size: 50px;
 }
 
-/* Header */
-header::before {
-  content: "";
-  display: block;
-  margin-bottom: 80px;
-}
-
 nav {
   width: 100%;
   height: 80px;
@@ -85,6 +78,7 @@ nav {
 }
 
 .nav .enlaces-header a {
+  text-transform: uppercase;
   color: #5d6678;
   text-decoration: none;
   margin-left: 20px;
@@ -97,7 +91,7 @@ nav {
   text-align: center;
   z-index: 100;
   cursor: pointer;
-  transition: color 0.5s ease-in;
+  transition: color 0.8s ease-in;
 }
 
 .hamburguer > i {
@@ -134,12 +128,13 @@ nav {
   }
 }
 
-// Se agrega animacion a la imagen
+//---------- Se agrega animacion a la imagen
 .contenido-header > img {
   width: 550px;
   animation: ease-in animat 1s;
 }
 
+//----------- Keyframe Animado
 @keyframes animat {
   0% {
     transform: scale(0);
@@ -154,7 +149,7 @@ nav {
   margin: 0 0 0 30px;
 }
 
-// Sommbras titulos principales.
+//----------- Sommbras titulos principales.
 .contenido-header h1,
 .titulo,
 .textos-questions h1 {
@@ -499,36 +494,28 @@ footer {
 
 .flexbox-container {
   text-align: center;
-  font-size: 13px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-line-pack: center;
   align-content: center;
-  gap: 2rem 1rem;
+  gap: 2rem 2rem;
+  img {
+    animation: ease-in animat 1s;
+  }
+  div {
+    background: linear-gradient(180deg, #eff0f1 0%, #c0c5ca 98%),
+      radial-gradient(
+        at bottom,
+        rgba(255, 255, 255, 0.3) 0%,
+        rgba(0, 0, 0, 0.3) 100%
+      );
+    background-blend-mode: screen;
+    border-radius: 20px;
+    width: 400;
+  }
 }
 
-.flexbox-container > div {
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#00000050),
-    to(#e6e6e6)
-  );
-  background-image: linear-gradient(to bottom, #00000050 0%, #e6e6e6 100%);
-  border-radius: 10px;
-  width: 400px;
-}
-
-.flex-item > h6 {
+.flexbox-container > .flex-item > h6 {
   color: white;
   padding: 10px;
   margin-bottom: 5px;
