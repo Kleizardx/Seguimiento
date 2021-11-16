@@ -109,7 +109,12 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  a {
+    color: #03cc6b;
+    transition: color 0.5s;
+  }
 }
+
 // Se agrega animacion a la imagen
 .contenido-header > img {
   width: 550px;
@@ -153,10 +158,11 @@ nav {
 }
 
 // Sommbras titulos principales.
-.contenido-header h1, .titulo, .textos-questions h1 {
+.contenido-header h1,
+.titulo,
+.textos-questions h1 {
   text-shadow: 1px 1px 2px rgb(82, 82, 82);
 }
-
 
 .contenido-header h1 {
   text-transform: uppercase;
@@ -226,11 +232,11 @@ nav {
 }
 
 .articulo > a:hover {
-  color: #1fde82;
+  color: #03cc6b;
   transition: color 0.5s;
 }
 
-/* Questions */
+/* Info Adicional (Siempre conectados)? Relleno digamos */
 
 .questions {
   height: 600px;
@@ -253,26 +259,10 @@ nav {
   color: #5d6678;
 }
 
-.textos-questions a {
-  margin: 28px 0 0 0;
-  width: 130px;
-  display: inline-block;
-  background: #1fde82;
-  text-align: center;
-  color: #fff;
-  padding: 12px 0;
-  text-decoration: none;
-  font-weight: 400;
-  text-transform: uppercase;
-  font-size: 14px;
-  border-radius: 5px;
-  box-shadow: 0 8px 32px rgba(31, 222, 130, 0.46);
-}
-
-/* Results */
+/* Results - Estadistica de trabajos realizados */
 
 .results {
-  background: #2570ff;
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
   padding-top: 30px;
 }
 
@@ -286,13 +276,17 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  h4 {
+    background-image: linear-gradient(45deg, #93a5cf00 0%, #ffffff0e 100%);
+    border-radius: 30px;
+  }
 }
 
 .numbers .number {
   width: 45%;
   background: rgba(255, 255, 255, 0.2);
   color: #fff;
-  border-radius: 10px;
+  border-radius: 30px;
   padding: 40px 35px;
   margin-bottom: 20px;
 }
