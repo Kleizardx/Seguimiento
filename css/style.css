@@ -245,12 +245,7 @@ nav {
   transition: 0.5s;
 }
 
-.articulo:hover {
-  -webkit-box-shadow: 0 4px 10px rgba(17, 29, 48, 0.26);
-          box-shadow: 0 4px 10px rgba(17, 29, 48, 0.26);
-}
-
-.articulo > i {
+.articulo i {
   font-size: 30px;
   color: #fff;
   background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
@@ -264,25 +259,30 @@ nav {
           box-shadow: 0 8px 32px rgba(31, 222, 130, 0.137);
 }
 
-.articulo > h3 {
+.articulo h3 {
   font-size: 24px;
   margin-top: 30px;
 }
 
-.articulo > p {
+.articulo p {
   font-weight: 100;
   color: #5d6678;
   margin-top: 15px;
   padding-bottom: 20px;
 }
 
-.articulo > a {
+.articulo a {
   color: #5d6678;
   font-weight: 400;
   text-decoration: none;
 }
 
-.articulo > a:hover {
+.articulo:hover {
+  -webkit-box-shadow: 0 4px 10px rgba(17, 29, 48, 0.26);
+          box-shadow: 0 4px 10px rgba(17, 29, 48, 0.26);
+}
+
+.articulo > .articulo > a:hover {
   color: #03cc6b;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
@@ -519,7 +519,6 @@ footer {
   .enlaces-header {
     position: fixed;
     background: #667db6;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
     background-image: -webkit-gradient(linear, left bottom, left top, from(#88d3ce), to(#6e45e2));
     background-image: linear-gradient(to top, #88d3ce 0%, #6e45e2 100%);
@@ -540,8 +539,8 @@ footer {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    -webkit-clip-path: circle(0% at 100% 0);
-            clip-path: circle(0% at 100% 0);
+    -webkit-clip-path: circle(0% at 10% 0);
+            clip-path: circle(0% at 10% 0);
   }
   .nav .menudos {
     -webkit-clip-path: circle(150% at 100% 0);
@@ -553,27 +552,9 @@ footer {
   .hamburguer {
     display: block;
   }
-  /* About us */
-  .articulo {
-    width: 95%;
-  }
-  /* Questions */
-  .questions > img {
-    width: 200px;
-  }
-  /* results */
-  .numbers .number {
-    width: 95%;
-  }
-  .results-text h4 {
-    font-size: 35px;
-  }
   /* Services */
   .services > img {
     width: 200px;
-  }
-  .box-skills h4 {
-    width: 100%;
   }
   /* Footer */
   .partFooter {

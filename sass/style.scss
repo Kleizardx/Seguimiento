@@ -189,44 +189,40 @@ nav {
   border-radius: 10px;
   padding: 45px 30px 60px 30px;
   transition: 0.5s;
+  i {
+    font-size: 30px;
+    color: #fff;
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 50%;
+    box-shadow: 0 8px 32px rgba(31, 222, 130, 0.137);
+  }
+  h3 {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+  p {
+    font-weight: 100;
+    color: #5d6678;
+    margin-top: 15px;
+    padding-bottom: 20px;
+  }
+  a {
+    color: #5d6678;
+    font-weight: 400;
+    text-decoration: none;
+  }
 }
 
 .articulo:hover {
   box-shadow: 0 4px 10px rgba(17, 29, 48, 0.26);
 }
 
-.articulo > i {
-  font-size: 30px;
-  color: #fff;
-  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-  text-align: center;
-  padding-top: 20px;
-  border-radius: 50%;
-  box-shadow: 0 8px 32px rgba(31, 222, 130, 0.137);
-}
-
-.articulo > h3 {
-  font-size: 24px;
-  margin-top: 30px;
-}
-
-.articulo > p {
-  font-weight: 100;
-  color: #5d6678;
-  margin-top: 15px;
-  padding-bottom: 20px;
-}
-
-.articulo > a {
-  color: #5d6678;
-  font-weight: 400;
-  text-decoration: none;
-}
-
-.articulo > a:hover {
+.articulo > .articulo > a:hover {
   color: #03cc6b;
   transition: color 0.5s;
 }
@@ -442,7 +438,6 @@ footer {
   .enlaces-header {
     position: fixed;
     background: #667db6;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(
       to right,
       #667db6,
@@ -461,7 +456,7 @@ footer {
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
-    clip-path: circle(0% at 100% 0);
+    clip-path: circle(0% at 10% 0);
   }
 
   .nav .menudos {
@@ -477,36 +472,10 @@ footer {
     display: block;
   }
 
-  /* About us */
-
-  .articulo {
-    width: 95%;
-  }
-
-  /* Questions */
-
-  .questions > img {
-    width: 200px;
-  }
-
-  /* results */
-
-  .numbers .number {
-    width: 95%;
-  }
-
-  .results-text h4 {
-    font-size: 35px;
-  }
-
   /* Services */
 
   .services > img {
     width: 200px;
-  }
-
-  .box-skills h4 {
-    width: 100%;
   }
 
   /* Footer */
