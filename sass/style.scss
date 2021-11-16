@@ -289,44 +289,30 @@ nav {
   border-radius: 30px;
   padding: 40px 35px;
   margin-bottom: 20px;
-}
-
-.numbers .number h4 {
-  color: #fff;
-  font-size: 50px;
-  font-weight: 500;
-  margin-bottom: 20px;
-}
-
-.numbers .number p {
-  color: #f2f5fc;
-  font-weight: 300;
+  h4 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  p {
+    color: #f2f5fc;
+    font-weight: 300;
+  }
 }
 
 .results-text {
   width: 37%;
-}
-
-.results-text h4 {
-  color: #fff;
-  font-size: 40px;
-}
-
-.results-text p {
-  color: #fff;
-  font-weight: 300;
-  margin: 20px 0;
-}
-
-.results-text > a {
-  color: #fff;
-  text-decoration: none;
-  display: inline-block;
-  border: 1px solid #fff;
-  padding: 10px 0;
-  width: 120px;
-  text-align: center;
-  border-radius: 5px;
+  h4 {
+    color: #fff;
+    font-size: 40px;
+  }
+  p {
+    color: #fff;
+    font-weight: 300;
+    margin: 20px 0;
+  }
+  
 }
 
 /* Footer - Para todas las paginas HTMl */
@@ -372,7 +358,7 @@ footer {
   width: 70%;
 }
 
-/* Breakpoints responsive */
+/* ----------------Breakpoints responsive */
 
 @media screen and (max-width: 800px) {
   .titulo {
@@ -441,7 +427,7 @@ footer {
     margin-bottom: 40px;
   }
 }
-
+// ----------------Medidas responsivas 600px
 @media screen and (max-width: 600px) {
   .titulo {
     font-size: 35px;
