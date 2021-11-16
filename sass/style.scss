@@ -321,7 +321,7 @@ footer {
 }
 
 .partFooter {
-  width: 20%;
+  width: 25%;
   text-align: center;
   h4 {
     color: #1d273b;
@@ -330,20 +330,13 @@ footer {
     margin-bottom: 30px;
   }
   a {
-    display: block;
     text-decoration: none;
-    color: #5d6678;
     font-weight: 300;
-    transition: color 0.3s ease-in-out;
     margin-bottom: 10px;
   }
   a:hover {
-    color: #1f92de;
+    color: #0072b4;
   }
-}
-
-.partFooter img {
-  width: 80%;
 }
 
 /* ----------------Breakpoints responsive */
