@@ -325,30 +325,27 @@ footer {
 .partFooter {
   width: 20%;
   text-align: center;
-}
-
-.partFooter h4 {
-  color: #1d273b;
-  font-size: 20px;
-  font-weight: 400;
-  margin-bottom: 30px;
-}
-
-.partFooter a {
-  display: block;
-  text-decoration: none;
-  color: #5d6678;
-  font-weight: 300;
-  transition: color 0.3s ease-in-out;
-  margin-bottom: 10px;
-}
-
-.partFooter a:hover {
-  color: #1f92de;
+  h4 {
+    color: #1d273b;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  a {
+    display: block;
+    text-decoration: none;
+    color: #5d6678;
+    font-weight: 300;
+    transition: color 0.3s ease-in-out;
+    margin-bottom: 10px;
+  }
+  a:hover {
+    color: #1f92de;
+  }
 }
 
 .partFooter img {
-  width: 70%;
+  width: 80%;
 }
 
 /* ----------------Breakpoints responsive */
@@ -453,9 +450,9 @@ footer {
       #0082c8,
       #667db6
     );
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-image: linear-gradient(to top, #88d3ce 0%, #6e45e2 100%);
+
     top: 0;
     right: 0;
     width: 100%;

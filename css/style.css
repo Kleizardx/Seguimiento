@@ -429,7 +429,7 @@ footer {
 }
 
 .partFooter img {
-  width: 70%;
+  width: 80%;
 }
 
 /* ----------------Breakpoints responsive */
@@ -520,10 +520,9 @@ footer {
     position: fixed;
     background: #667db6;
     /* fallback for old browsers */
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-gradient(linear, left top, right top, from(#667db6), color-stop(#0082c8), color-stop(#0082c8), to(#667db6));
-    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#88d3ce), to(#6e45e2));
+    background-image: linear-gradient(to top, #88d3ce 0%, #6e45e2 100%);
     top: 0;
     right: 0;
     width: 100%;
