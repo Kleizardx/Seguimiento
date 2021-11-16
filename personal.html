@@ -3,60 +3,76 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Detalle del personal asignado a los trabajos">
-    <title>Seguimiento | Personal</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Seguimiento 2021</title>
+    <meta name="description" content="Pagina para seguimiento de tareas">
+    <meta name="Keywords" content="HTML, CSS, JS (ANIMACIONES) BOOTSTRAP, SASS, SEGUIMIENTO, PLANIFICACION">
     <!-- Mi CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- SASS / Bootstrap CSS -->
     <link rel="stylesheet" href="css/custom.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Athiti:wght@300&family=Bebas+Neue&family=Montserrat+Alternates:wght@200&family=Oswald:wght@300&family=Overpass:wght@200&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-
 <body>
-    <header id="ARRIBA">
-        <!-- Logo -->
-        <nav class="header__nav-panelPrincipal">
-            <!-- Recordar Linkear cada uno de estos menus a su pag -->
-            <a href="index.html">Inicio</a>
-            <a href="rendimiento.html">Rendimiento</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="#">Buscar</a>
+    <header>
+        <nav>
+            <section class="contenedor nav">
+                <div class="logo">
+                    <img src="LOGO" alt="">
+                </div>
+                <div class="enlaces-header">
+                    <a href="index.html">Inicio</a>
+                    <a href="personal.html">Personal</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                <div class="hamburguer">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </section>
         </nav>
     </header>
 
-    <h1 class="body__h1-tituloPrincipal">CUADRILLAS</h1>
+    <div class="contenedor">
+        <section class="contenido-header">
+            <section class="textos-header">
+                <h1>Personal</h1>
+                Aqui podras visualizar las cuadrillas disponibiles <br>para realizar tareas </p>
+                <a href="#">Contacto</a>
+            </section>
+            <img src="imgmaps/ImgWEB/Team work_Isometric.svg" alt="">
+        </section>
+    </div>
 
-    <div class="flexbox-container">
-        <div class="flex-item">
-            <h6>Buenos Aires</h6>
-
-            <img src="imgmaps/1.jpg" alt="Imagen 1" width="300">
-        </div>
-        <div class="flex-item">
-            <h6>Zona Norte</h6>
-
-            <img src="imgmaps/2.jpg" alt="Imagen 1" width="300">
-        </div>
-        <div class="flex-item">
-            <h6>Zona Oeste</h6>
-
-            <img src="imgmaps/3.jpg" alt="Imagen 1" width="300">
-        </div>
-        <div class="flex-item">
-            <h6>Zona Sur</h6>
-
-            <img src="imgmaps/4.jpg" alt="Imagen 1" width="300">
+    <div class="contenedor">
+        <div class="flexbox-container">
+            <div class="flex-item">
+                <h6>Buenos Aires</h6>
+                <img src="imgmaps/ImgWEB/Personal data _Two Color.svg" alt="Imagen 1" width="300">
+            </div>
+            <div class="flex-item">
+                <h6>Zona Norte</h6>
+                <img src="imgmaps/ImgWEB/Personal data _Two Color.svg" alt="Imagen 1" width="300">
+            </div>
+            <div class="flex-item">
+                <h6>Zona Oeste</h6>
+                <img src="imgmaps/ImgWEB/Personal data _Two Color.svg" alt="Imagen 1" width="300">
+            </div>
+            <div class="flex-item">
+                <h6>Zona Sur</h6>
+                <img src="imgmaps/ImgWEB/Personal data _Two Color.svg" alt="Imagen 1" width="300">
+            </div>
         </div>
     </div>
 
-    <hr class="hr_inicio-foter">
     <footer>
-        <nav class="foot">
+        <div class="partFooter">
+            <img src="logo" alt="">
+        </div>
+        <div class="partFooter">
+            <h4>Servicios</h4>
             <ul>
                 <li> <a href="index.html">PAG.PRINCIPAL</a> </li>
                 <li> <a href="#ARRIBA">IR ARRIBA</a> </li>
@@ -67,8 +83,12 @@
                 <!-- Para enviar mensajes directos utilizar, https://wa.me/numero de telefono, sin + -->
                 <!-- Para abrir una nueva pesta#a en blanco, target="_blank" -->
             </ul>
-        </nav>
+        </div>
+
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
