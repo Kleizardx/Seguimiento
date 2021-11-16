@@ -27,7 +27,7 @@ a:visited {
 }
 
 a:hover {
-  text-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.3);
+  text-shadow: 0 0.2rem 0.8rem #525252;
   /* Derecha, Hacia Abajo, Difuminacion, color */
 }
 
@@ -144,8 +144,27 @@ nav {
           align-items: center;
 }
 
+.contenido-header p {
+  font-weight: 100;
+  margin-top: 14px;
+  color: #3f434d;
+}
+
 .contenido-header a {
-  color: #03cc6b;
+  margin: 28px 0 0 0;
+  width: 130px;
+  display: inline-block;
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  text-align: center;
+  color: #fff;
+  padding: 12px 0;
+  text-decoration: none;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 8px 32px rgba(131, 131, 131, 0.205);
+          box-shadow: 0 8px 32px rgba(131, 131, 131, 0.205);
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
 }
@@ -180,29 +199,6 @@ nav {
 
 .textos-header {
   margin: 0 0 0 30px;
-}
-
-.contenido-header p {
-  font-weight: 100;
-  margin-top: 14px;
-  color: #3f434d;
-}
-
-.contenido-header a {
-  margin: 28px 0 0 0;
-  width: 130px;
-  display: inline-block;
-  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
-  text-align: center;
-  color: #fff;
-  padding: 12px 0;
-  text-decoration: none;
-  font-weight: 400;
-  text-transform: uppercase;
-  font-size: 14px;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 8px 32px rgba(131, 131, 131, 0.205);
-          box-shadow: 0 8px 32px rgba(131, 131, 131, 0.205);
 }
 
 .contenido-header h1,

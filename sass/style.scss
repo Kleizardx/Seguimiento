@@ -109,8 +109,25 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  p {
+    font-weight: 100;
+    margin-top: 14px;
+    color: #3f434d;
+  }
   a {
-    color: #03cc6b;
+    margin: 28px 0 0 0;
+    width: 130px;
+    display: inline-block;
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    text-align: center;
+    color: #fff;
+    padding: 12px 0;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(131, 131, 131, 0.205);
     transition: color 0.5s;
   }
 }
@@ -133,28 +150,6 @@ nav {
 
 .textos-header {
   margin: 0 0 0 30px;
-}
-
-.contenido-header p {
-  font-weight: 100;
-  margin-top: 14px;
-  color: #3f434d;
-}
-
-.contenido-header a {
-  margin: 28px 0 0 0;
-  width: 130px;
-  display: inline-block;
-  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
-  text-align: center;
-  color: #fff;
-  padding: 12px 0;
-  text-decoration: none;
-  font-weight: 400;
-  text-transform: uppercase;
-  font-size: 14px;
-  border-radius: 10px;
-  box-shadow: 0 8px 32px rgba(131, 131, 131, 0.205);
 }
 
 // Sommbras titulos principales.
@@ -251,12 +246,11 @@ nav {
 
 .textos-questions {
   margin: 0 0 0 30px;
-}
-
-.textos-questions p {
-  font-weight: 100;
-  margin-top: 14px;
-  color: #5d6678;
+  p {
+    font-weight: 100;
+    margin-top: 14px;
+    color: #5d6678;
+  }
 }
 
 /* Results - Estadistica de trabajos realizados */
@@ -312,7 +306,6 @@ nav {
     font-weight: 300;
     margin: 20px 0;
   }
-  
 }
 
 /* Footer - Para todas las paginas HTMl */
